@@ -188,7 +188,7 @@ https://github.com/user-attachments/assets/bf48f7a5-0648-469d-aa45-028353c91835
 ## 🚀 Setup
 
 1. **Clone the Repository:**  
-   git clone [<repository-url>](https://github.com/burak0aydin/6-Pieces-iOSApp)
+   git clone https://github.com/burak0aydin/6-Pieces-iOSApp
 
 2. **Open the project in Xcode:**  
    open "ProjectName".xcodeproj
