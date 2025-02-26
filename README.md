@@ -43,6 +43,8 @@ https://github.com/user-attachments/assets/b0de2b02-e677-4cfb-a90e-2bf658c4ae73
 A simple iOS application that integrates maps, location tracking, and persistent storage.
 This project demonstrates the use of several iOS frameworks to build a map-based application.
 
+https://github.com/user-attachments/assets/579d06f4-856a-4022-93cc-b8fef90d0975
+
 ## Features
 - **View Current Location:** Displays the user’s current location.
 - **Add Locations:** Use a long press gesture on the map to add a location.
@@ -68,6 +70,8 @@ This project demonstrates the use of several iOS frameworks to build a map-based
 
 ## Overview
 A simple iOS application that allows users to save product details along with an image, name, price, and description using Core Data.
+
+https://github.com/user-attachments/assets/695783cf-9399-4ca9-88bc-2acbda66060a
 
 ## Features
 - Display a list of saved products.
@@ -95,6 +99,8 @@ A simple iOS application that allows users to save product details along with an
 ListApp is a simple iOS application developed in Swift that demonstrates basic CRUD operations using Core Data.
 The app allows users to add, edit, and delete list items, providing a clean interface built with UIKit.
 
+https://github.com/user-attachments/assets/0507c437-8753-4e8e-9b73-949e1001f5e6
+
 ## Features
 - **Add List Items:** Users can add new items via an alert with a text field.
 - **Edit List Items:** Swipe actions allow editing of existing items.
@@ -119,6 +125,8 @@ The app allows users to add, edit, and delete list items, providing a clean inte
 ## Overview
 FilmsCollectionView is an iOS application built using Swift and UIKit. It displays a collection of films in a visually
 appealing layout and allows users to view film details and add films to a list.
+
+https://github.com/user-attachments/assets/706a0b56-52c1-45a9-ae02-91d9716c6486
 
 ## Features
 - **Film Collection:**  
@@ -151,6 +159,9 @@ Utilizes UICollectionView for a dynamic and responsive design.
 ## Overview
 newsApp is an iOS application that fetches and displays news articles from a remote JSON data source.
 It utilizes a simple MVVM approach to separate data handling from the UI, providing a clean and responsive interface.
+
+https://github.com/user-attachments/assets/bf48f7a5-0648-469d-aa45-028353c91835
+
 
 ## Features
 - **Fetch News:** Downloads news articles from a specified URL.
