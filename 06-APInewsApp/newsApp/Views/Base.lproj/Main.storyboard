@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PSE-39-ZFW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="70" id="Kgi-XD-mMe" customClass="NewsCell" customModule="newsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kgi-XD-mMe" id="2ve-1n-kyL">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8N-ZO-bNe">
+                                                    <rect key="frame" x="20" y="0.0" width="338" height="28.666666666666668"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="338" id="7Py-Xo-HDV"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="Eck-Rb-vIP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxG-Rn-G6c">
+                                                    <rect key="frame" x="20" y="36" width="338" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="caG-tM-eZX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="S8N-ZO-bNe" firstAttribute="top" secondItem="2ve-1n-kyL" secondAttribute="topMargin" constant="-11" id="C0R-Rc-d5i"/>
+                                                <constraint firstItem="VxG-Rn-G6c" firstAttribute="trailing" secondItem="S8N-ZO-bNe" secondAttribute="trailing" id="GqU-ST-AB7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VxG-Rn-G6c" secondAttribute="bottom" constant="35" id="LA5-vx-Sv7"/>
+                                                <constraint firstItem="VxG-Rn-G6c" firstAttribute="leading" secondItem="S8N-ZO-bNe" secondAttribute="leading" id="diA-3t-bVu"/>
+                                                <constraint firstItem="VxG-Rn-G6c" firstAttribute="top" secondItem="S8N-ZO-bNe" secondAttribute="bottom" constant="7.3333333333333321" id="sgE-90-sZL"/>
+                                                <constraint firstItem="S8N-ZO-bNe" firstAttribute="leading" secondItem="2ve-1n-kyL" secondAttribute="leadingMargin" id="tEc-Uk-kkN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="storyLabel" destination="VxG-Rn-G6c" id="7kI-dn-88s"/>
+                                            <outlet property="titleLabel" destination="S8N-ZO-bNe" id="xXa-YY-KLB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PSE-39-ZFW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0WH-QE-eAq"/>
+                            <constraint firstItem="PSE-39-ZFW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDo-dU-7VH"/>
+                            <constraint firstItem="PSE-39-ZFW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dTH-Is-r0S"/>
+                            <constraint firstItem="PSE-39-ZFW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nOx-br-EoW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PSE-39-ZFW" id="k63-2s-GNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
